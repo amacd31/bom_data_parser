@@ -1,0 +1,12 @@
+*DS_Store
+*.pyc
+*.png
+*.csv
+*.zip
+*.txt
+venv
+.coverage
+coverage.xml
+cover
+nosetests.xml
+*.swp
