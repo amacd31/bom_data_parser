@@ -1,10 +1,12 @@
 import pandas as pd
 
+from bom_data_parser import mapper
+
 def read_acorn_sat_csv(fname):
     with open(fname) as f:
         header_line = f.readline()
 
-    measurand = header_line[0:8]
+    measurand = mapper.convert_key(header_line[0:8])
 
     missing_value_key = 'missing_value='
     missing_value_start = header_line.index(missing_value_key)+len(missing_value_key)
