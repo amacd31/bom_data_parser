@@ -11,6 +11,7 @@ cover
 nosetests.xml
 *.swp
 bom_data_parser.egg-info/
+MANIFEST
 build/
 dist/
 setuptest/
