@@ -1,3 +1,5 @@
+import os
+
 import versioneer
 versioneer.versionfile_source = 'bom_data_parser/_version.py'
 versioneer.versionfile_build = 'bom_data_parser/_version.py'
@@ -6,11 +8,18 @@ versioneer.parentdir_prefix = 'bom_data_parser-'
 
 from setuptools import setup
 
+here = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = ''.join([
+            line for line in f.readlines() if 'travis-ci' not in line
+        ])
+
 setup(
     name='bom_data_parser',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description='Basic library for parsing data formats supplied by the Australian Bureau of Meteorology.',
+    long_description=long_description,
     author='Andrew MacDonald',
     author_email='andrew@maccas.net',
     license='BSD',
