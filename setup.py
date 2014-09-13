@@ -23,7 +23,7 @@ setup(
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Topic :: Software Development :: Build Tools',
-        'Topic :: Software Development :: Libraries :: Python Modules'
+        'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: BSD License',
 
         'Programming Language :: Python :: 2',
