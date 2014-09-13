@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 def parse_json(station_json):
-    if station_json.keys() != [u'observations']:
+    if list(station_json.keys()) != [u'observations']:
         raise Exception('No observations key; Not 72 hour observations json format')
 
     attributes = {
