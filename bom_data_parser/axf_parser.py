@@ -10,7 +10,6 @@ def read_axf(axf_string):
 
         elif line.startswith('['):
             block_key = line.replace('[',"").replace(']',"")
-            print block_key
 
         else:
             if block_key not in blocks:
@@ -43,4 +42,4 @@ def read_axf_file(axf_file):
         return read_axf(f.read())
 
 if __name__ == "__main__":
-    print read_axf_file('../tests/data/IDV60700.axf')
+    print(read_axf_file('../tests/data/IDV60700.axf'))
