@@ -1,0 +1,2 @@
+include versioneer.py
+include bom_data_parser/_version.py

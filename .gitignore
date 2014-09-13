@@ -10,3 +10,7 @@ coverage.xml
 cover
 nosetests.xml
 *.swp
+bom_data_parser.egg-info/
+build/
+dist/
+setuptest/
