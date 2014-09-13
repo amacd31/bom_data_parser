@@ -1,4 +1,5 @@
 import os
+from io import open
 
 import versioneer
 versioneer.versionfile_source = 'bom_data_parser/_version.py'
