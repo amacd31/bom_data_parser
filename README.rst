@@ -11,7 +11,9 @@ Dependencies
 Requires Python 2.6 or greater (mostly tested with Python 3.3 on Linux), numpy and pandas.
 
 Test suite status when run with Python 2.6, 2.7, 3.2, 3.3, and 3.4 on Ubuntu (using travis-ci):
+
 .. image:: https://secure.travis-ci.org/amacd31/bom_data_parser.png?branch=master
+
     :target: https://travis-ci.org/amacd31/bom_data_parser
 
 Usage
