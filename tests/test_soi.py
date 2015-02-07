@@ -2,7 +2,6 @@ import os
 import numpy as np
 import pandas as pd
 import unittest
-from urllib2 import urlopen
 
 from bom_data_parser import read_soi_html
 
