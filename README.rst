@@ -13,7 +13,6 @@ Requires Python 2.6 or greater (mostly tested with Python 3.3 on Linux), numpy a
 Test suite status when run with Python 2.6, 2.7, 3.2, 3.3, and 3.4 on Ubuntu (using travis-ci):
 
 .. image:: https://secure.travis-ci.org/amacd31/bom_data_parser.png?branch=master
-
     :target: https://travis-ci.org/amacd31/bom_data_parser
 
 Usage
@@ -33,6 +32,7 @@ Supported formats
 * Climate Data Online (read_climate_data_online_csv) - http://www.bom.gov.au/climate/data/
 * Hydrologic Reference Stations (read_hrs_csv) - http://www.bom.gov.au/water/hrs/
 * Latest 72 hour observations (read_obs_json) - e.g. http://www.bom.gov.au/products/IDN60901/IDN60901.94767.shtml#other_formats
+* SOI data (read_soi_html) - e.g. ftp://ftp.bom.gov.au/anon/home/ncc/www/sco/soi/soiplaintext.html
 
 Notes
 -----
