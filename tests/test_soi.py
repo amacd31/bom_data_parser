@@ -15,6 +15,6 @@ class SOITest(unittest.TestCase):
             soi_data = read_soi_html(soi_file)
 
         self.assertTrue('soi' in soi_data.columns)
-        self.assertEqual(soi_data.ix['1876-01'], 11.3)
-        self.assertEqual(soi_data.ix['1984-12'], -1.4)
-        self.assertEqual(soi_data.ix['2015-01'], 7.8)
+        self.assertEqual(soi_data.ix['1876-01'].values.item(), 11.3)
+        self.assertEqual(soi_data.ix['1984-12'].values.item(), -1.4)
+        self.assertEqual(soi_data.ix['2015-01'].values.item(), -7.8)
