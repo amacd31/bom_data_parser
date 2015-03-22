@@ -14,5 +14,5 @@ def read_soi_html(input_file):
 
     soi_data = pd.DataFrame({"soi": soi_data.values}, index=soi_data.index.map(lambda i: datetime.strptime("{0} {1}".format(i[0], i[1]), "%b %Y"))).sort_index().dropna().asfreq('MS')
 
-    return soi_data
+    return soi_data.soi
 
