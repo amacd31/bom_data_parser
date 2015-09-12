@@ -13,6 +13,8 @@ class SOITest(unittest.TestCase):
         with open(self.test_soi_file, 'r') as soi_file:
             soi_data = read_soi_html(soi_file)
 
+        self.assertEqual(soi_data.dtype, np.dtype('float64'))
         self.assertEqual(soi_data.ix['1876-01'].values.item(), 11.3)
         self.assertEqual(soi_data.ix['1984-12'].values.item(), -1.4)
         self.assertEqual(soi_data.ix['2015-01'].values.item(), -7.8)
+        self.assertEqual(soi_data.ix['2015-08'].values.item(), -19.8)
