@@ -5,6 +5,7 @@ from bom_data_parser.hrs import read_hrs_csv
 from bom_data_parser.observations_json import read_obs_json
 from bom_data_parser.soi import read_soi_html
 from bom_data_parser.water_storages import read_water_storage_series
+from bom_data_parser.water_storages import read_water_storage_states
 
 from ._version import get_versions
 __version__ = get_versions()['version']
