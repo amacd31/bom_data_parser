@@ -2,7 +2,7 @@ Australian Government
 Bureau of Meteorology
 
 Notes for Daily Minimum Temperature Climate Data
-Product code: IDCJAC0011 reference: 16388551
+Product code: IDCJAC0011 reference: 16397731
 ____________________________________________________________________
 
 ** Station Details **
@@ -102,7 +102,7 @@ http://www.bom.gov.au/climate/how/contacts.shtml
 
 _________________________________________
 
-Created on Thu 04 Sep 2014 09:04:49 AM UTC from Climate Data Online, Bureau of Meteorology.
+Created on Fri 05 Sep 2014 12:57:43 PM UTC from Climate Data Online, Bureau of Meteorology.
 http://www.bom.gov.au/climate/data
 
 Further information on this product: http://www.bom.gov.au/climate/cdo/about/about-airtemp-data.shtml

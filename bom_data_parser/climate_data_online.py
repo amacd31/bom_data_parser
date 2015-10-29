@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 import zipfile
@@ -38,7 +39,8 @@ def read_climate_data_online_zip(fname):
     filename = fname.split('.')[0]
     with zipfile.ZipFile('{0}.zip'.format(filename)) as zf:
         #notes = zf.read('{0}_Note.txt'.format(filename))
-        with zf.open('{0}_Data.csv'.format(filename)) as dfile:
+        base_name = os.path.basename(filename)
+        with zf.open('{0}_Data.csv'.format(base_name)) as dfile:
             df, attributes = read_climate_data_online_csv(dfile)
 
     return df, attributes
