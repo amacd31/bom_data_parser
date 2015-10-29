@@ -27,7 +27,7 @@ setup(
     url='https://github.com/amacd31/bom_data_parser',
     install_requires=['numpy', 'pandas', 'beautifulsoup4'],
     packages = ['bom_data_parser'],
-    test_suite = 'tests',
+    test_suite = 'nose.collector',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
