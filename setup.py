@@ -25,7 +25,12 @@ setup(
     author_email='andrew@maccas.net',
     license='BSD',
     url='https://github.com/amacd31/bom_data_parser',
-    install_requires=['numpy', 'pandas', 'beautifulsoup4'],
+    install_requires= [
+        'numpy',
+        'pandas',
+        'beautifulsoup4',
+        'lxml',
+    ],
     packages = ['bom_data_parser'],
     test_suite = 'nose.collector',
     classifiers=[
