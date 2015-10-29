@@ -7,6 +7,7 @@ from bom_data_parser import read_water_storage_series, read_water_storage_states
 class WaterStoragesTest(unittest.TestCase):
     def setUp(self):
         self.test_xml_file = os.path.join(os.path.dirname(__file__), 'data', 'water_storage', 'urn:bom.gov.au:awris:common:codelist:feature:lakenillahcootie')
+        self.test_datasetless_xml_file = os.path.join(os.path.dirname(__file__), 'data', 'water_storage', 'urn:bom.gov.au:awris:common:codelist:feature:brewster')
 
         self.test_australia_xml_file = os.path.join(os.path.dirname(__file__), 'data', 'water_storage', 'urn:bom.gov.au:awris:common:codelist:region.country:australia')
 
@@ -31,3 +32,10 @@ class WaterStoragesTest(unittest.TestCase):
             storages = read_water_storage_urns(water_storage_file)
 
         self.assertEqual(len(storages), 71)
+
+    def test_read_storage_without_dataset_attr(self):
+        with open(self.test_datasetless_xml_file, 'r') as water_storage_file:
+            storage_data = read_water_storage_series(water_storage_file)
+
+        self.assertEqual(storage_data.ix['2014-04-04'], 0.0)
+        self.assertEqual(len(storage_data), 459)

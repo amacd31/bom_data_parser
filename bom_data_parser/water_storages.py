@@ -9,6 +9,8 @@ def read_water_storage_series(xml_file):
 
     data = []
     for s in root.series:
+        if not hasattr(s, 'dataset'):
+            continue
         for v in s.dataset.record:
             data.append(float(v.text))
 
