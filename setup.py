@@ -2,10 +2,6 @@ import os
 from io import open
 
 import versioneer
-versioneer.versionfile_source = 'bom_data_parser/_version.py'
-versioneer.versionfile_build = 'bom_data_parser/_version.py'
-versioneer.tag_prefix = 'v'
-versioneer.parentdir_prefix = 'bom_data_parser-'
 
 from setuptools import setup
 
