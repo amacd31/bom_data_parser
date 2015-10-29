@@ -33,7 +33,7 @@ def read_climate_data_online_zip(fname):
     """
         Read data straight out of zipfile.
 
-        ..note: Reuqires the filename to have been unchanged because it is used for identifying the contained data file.
+        ..note: Requires the filename to have been unchanged because it is used for identifying the contained data file.
     """
     filename = fname.split('.')[0]
     with zipfile.ZipFile('{0}.zip'.format(filename)) as zf:
