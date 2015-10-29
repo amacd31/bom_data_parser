@@ -26,7 +26,7 @@ def read_water_storage_states(xml_file):
     state_urns = []
     for child in root.getchildren():
         if hasattr(child, 'region') and child.region.type == 'urn:bom.gov.au:awris:common:codelist:regiontype:state':
-            state_urns.append(child.region.identifier)
+            state_urns.append(child.region.identifier.text)
 
     return state_urns
 
@@ -37,6 +37,6 @@ def read_water_storage_urns(xml_file):
     storage_urns = []
     for child in root.getchildren():
         if hasattr(child, 'region') and child.region.type == 'urn:bom.gov.au:awris:common:codelist:featuretype:waterstorage':
-            storage_urns.append(child.region.identifier)
+            storage_urns.append(child.region.identifier.text)
 
     return storage_urns
