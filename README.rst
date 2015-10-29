@@ -8,9 +8,10 @@ For the most part this library provides a wrapper around Pandas read methods. Th
 Dependencies
 ------------
 
-Requires Python 2.6 or greater (mostly tested with Python 3.3 on Linux), numpy and pandas.
+Requires Python 2.7, 3.4 or greater (mostly tested with Python 2.7 on Linux),
+numpy, pandas, beautifulsoup4, and lxml.
 
-Test suite status when run with Python 2.6, 2.7, 3.2, 3.3, and 3.4 on Ubuntu (using travis-ci):
+Test suite status when run with Python 2.7, 3.4 and 3.5 using travis-ci:
 
 .. image:: https://secure.travis-ci.org/amacd31/bom_data_parser.png?branch=master
     :target: https://travis-ci.org/amacd31/bom_data_parser
