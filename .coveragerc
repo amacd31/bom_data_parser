@@ -1,0 +1,12 @@
+[run]
+branch = True
+include = bom_data_parser/**
+
+[report]
+include = bom_data_parser/**
+omit = bom_data_parser/_version.py
+
+exclude_lines =
+    raise NotImplementedError
+
+    if __name__ == .__main__.:

@@ -11,5 +11,10 @@ before_install:
   - export PATH=/home/travis/miniconda/bin:$PATH
 install:
   - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy nose pandas lxml beautifulsoup4
+  - pip install codecov
+  - pip install coveralls
   - python setup.py install
-script: python setup.py test
+script: python setup.py nosetests --cover-erase --with-coverage --cover-package=bom_data_parser --cover-html --with-xunit; coverage xml --rcfile=.coveragerc
+after_success:
+  - codecov
+  - coveralls
