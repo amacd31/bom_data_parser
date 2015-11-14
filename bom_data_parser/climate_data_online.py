@@ -36,10 +36,8 @@ def read_climate_data_online_zip(fname):
 
         ..note: Requires the filename to have been unchanged because it is used for identifying the contained data file.
     """
-    filename = fname.split('.')[0]
-    with zipfile.ZipFile('{0}.zip'.format(filename)) as zf:
-        #notes = zf.read('{0}_Note.txt'.format(filename))
-        base_name = os.path.basename(filename)
+    base_name = os.path.basename(fname).split('.')[0]
+    with zipfile.ZipFile(fname) as zf:
         with zf.open('{0}_Data.csv'.format(base_name)) as dfile:
             df, attributes = read_climate_data_online_csv(dfile)
 
