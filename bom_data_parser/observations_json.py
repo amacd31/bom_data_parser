@@ -32,5 +32,5 @@ def parse_json(station_json):
 
     return df, attributes
 
-def read_obs_json(filename):
-    return parse_json(json.load(file(filename)))
+def read_obs_json(filelike):
+    return parse_json(json.load(filelike))
